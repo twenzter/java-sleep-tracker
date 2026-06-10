@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.function.Function;
 
 public class SleeplessSessionsFinder implements Function<List<SleepingSession>,SleepAnalysisResult> {
-    private final static int MORNING_TIME = 6;
-    private final static int NOON_TIME = 12;
+    private static final int MORNING_TIME = 6;
+    private static final int NOON_TIME = 12;
 
     @Override
     public SleepAnalysisResult apply(List<SleepingSession> sessions) {
