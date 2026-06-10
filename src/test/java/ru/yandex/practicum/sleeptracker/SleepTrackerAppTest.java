@@ -61,13 +61,13 @@ public class SleepTrackerAppTest {
 
     @Test
     void sleepingAverageDurationFinderFilledList() {
-        Assertions.assertEquals("Средняя продолжительность сессии 230,00 минут",
+        Assertions.assertEquals("Средняя продолжительность сессии 230.00 минут",
                 functions.get(3).apply(sessionsList).getAnswer());
     }
 
     @Test
     void sleepingAverageDurationFinderEmptyList() {
-        Assertions.assertEquals("Средняя продолжительность сессии 0,00 минут",
+        Assertions.assertEquals("Средняя продолжительность сессии 0.00 минут",
                 functions.get(3).apply(emptySessionsList).getAnswer());
     }
 
