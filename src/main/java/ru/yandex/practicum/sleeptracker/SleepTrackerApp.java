@@ -7,8 +7,8 @@ import java.util.function.Function;
 import java.time.format.DateTimeFormatter;
 
 public class SleepTrackerApp {
-    private final static DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yy HH:mm");
-    private final static List<Function<List<SleepingSession>,SleepAnalysisResult>> functions =
+    private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yy HH:mm");
+    private static final List<Function<List<SleepingSession>,SleepAnalysisResult>> functions =
             List.of(new AmountSleepingSessions(), new SleepingMinDurationFinder(), new SleepingMaxDurationFinder(),
                     new SleepingAverageDurationFinder(), new AmountBadSleepingSessions(),
                     new SleeplessSessionsFinder(), new UserSleepingType());
