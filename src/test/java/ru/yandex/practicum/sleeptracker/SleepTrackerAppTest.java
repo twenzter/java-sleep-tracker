@@ -9,12 +9,12 @@ import java.util.function.Function;
 
 public class SleepTrackerAppTest {
 
-    final static List<Function<List<SleepingSession>,SleepAnalysisResult>> functions =
+    static final List<Function<List<SleepingSession>,SleepAnalysisResult>> functions =
             List.of(new AmountSleepingSessions(), new SleepingMinDurationFinder(), new SleepingMaxDurationFinder(),
                     new SleepingAverageDurationFinder(), new AmountBadSleepingSessions(),
                     new SleeplessSessionsFinder(), new UserSleepingType());
 
-    final static List<SleepingSession> sessionsList = List.of(new SleepingSession(
+    static final List<SleepingSession> sessionsList = List.of(new SleepingSession(
             LocalDateTime.of(2025,10,20,16,20),
             LocalDateTime.of(2025,10,20,16,30),
             SleepQuality.BAD), new SleepingSession(
@@ -22,7 +22,7 @@ public class SleepTrackerAppTest {
             LocalDateTime.of(2025,11,13,6,50),
             SleepQuality.GOOD));
 
-    final static List<SleepingSession> emptySessionsList = List.of();
+    static final List<SleepingSession> emptySessionsList = List.of();
 
 
     @Test
