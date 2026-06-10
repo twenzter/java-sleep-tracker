@@ -23,7 +23,7 @@ public class SleepTrackerApp {
                             SleepQuality.valueOf(session[2])))
                     .toList();
             functions.forEach(function ->
-                    System.out.println(function.apply(sleepingSessions).getAnswer()) );
+                    System.out.println(function.apply(sleepingSessions).getAnswer()));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
