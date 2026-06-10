@@ -5,13 +5,13 @@ import java.util.function.*;
 import java.util.stream.Collectors;
 
 public class UserSleepingType implements Function<List<SleepingSession>, SleepAnalysisResult> {
-    private final static int MORNING_TIME = 6;
-    private final static int NOON_TIME = 12;
+    private static final int MORNING_TIME = 6;
+    private static final int NOON_TIME = 12;
 
-    private final static int OWL_START_SLEEPING_TIME = 23;
-    private final static int OWL_END_SLEEPING_TIME = 9;
-    private final static int LARK_START_SLEEPING_TIME = 22;
-    private final static int LARK_END_SLEEPING_TIME = 7;
+    private static final int OWL_START_SLEEPING_TIME = 23;
+    private static final int OWL_END_SLEEPING_TIME = 9;
+    private static final int LARK_START_SLEEPING_TIME = 22;
+    private static final int LARK_END_SLEEPING_TIME = 7;
 
     @Override
     public SleepAnalysisResult apply(List<SleepingSession> sessions) {
